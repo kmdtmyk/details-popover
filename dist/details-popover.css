@@ -1,9 +1,11 @@
 details.popover {
+  display: inline-block;
   position: relative;
 }
 
 details.popover summary {
   outline: 0;
+  cursor: pointer;
 }
 
 details.popover summary::-webkit-details-marker {
@@ -18,13 +20,76 @@ details.popover[open] > summary:before {
   right: 0;
   bottom: 0;
   z-index: 50;
+  cursor: default;
 }
 
-details.popover summary + div {
+details.popover .popover-content {
   position: absolute;
   background-color: #fff;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   border: 1px solid #ccc;
   border-radius: 4px;
   z-index: 50;
+}
+
+details.popover.popover-left-start .popover-content {
+  top: 0;
+  right: 100%;
+}
+
+details.popover.popover-left .popover-content {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+details.popover.popover-left-end .popover-content {
+  right: 100%;
+  bottom: 0;
+}
+
+details.popover.popover-right-start .popover-content {
+  top: 0;
+  left: 100%;
+}
+
+details.popover.popover-right .popover-content {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+details.popover.popover-right-end .popover-content {
+  left: 100%;
+  bottom: 0;
+}
+
+details.popover.popover-top-start .popover-content {
+  bottom: 100%;
+  right: 0;
+}
+
+details.popover.popover-top .popover-content {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+details.popover.popover-top-end .popover-content {
+  bottom: 100%;
+}
+
+details.popover.popover-bottom-start .popover-content {
+  top: 100%;
+  right: 0;
+}
+
+details.popover.popover-bottom .popover-content {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+details.popover.popover-bottom-end .popover-content {
+  top: 100%;
 }
