@@ -4,6 +4,8 @@
   "description": "",
   "main": "",
   "scripts": {
+    "build": "node-sass src/details-popover.scss dist/details-popover.css --output-style expanded",
+    "watch": "npm run build -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/kmdtmyk/details-popover/issues"
   },
-  "homepage": "https://github.com/kmdtmyk/details-popover#readme"
+  "homepage": "https://github.com/kmdtmyk/details-popover#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
 }
