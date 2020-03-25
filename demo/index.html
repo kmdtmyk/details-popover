@@ -3,6 +3,9 @@
   <head>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.10.3/beautify-html.js'></script>
     <link rel='stylesheet' href='../dist/details-popover.css'>
     <style>
       body{
@@ -84,8 +87,11 @@
       }
 
       .demo .popover-content{
-        width: 30rem;
-        padding: 1rem;
+        padding: 0.4rem;
+      }
+
+      .demo .popover-content pre{
+        margin: 0;
       }
     </style>
   </head>
@@ -94,78 +100,92 @@
       <div class='top-start'>
         <details class='popover popover-top-start'>
           <summary>top start</summary>
-          <div class='popover-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class='popover-content'>content</div>
         </details>
       </div>
       <div class='top'>
         <details class='popover popover-top'>
           <summary>top</summary>
-          <div class='popover-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class='popover-content'>content</div>
         </details>
       </div>
       <div class='top-end'>
         <details class='popover popover-top-end'>
           <summary>top end</summary>
-          <div class='popover-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class='popover-content'>content</div>
         </details>
       </div>
 
       <div class='left-start'>
         <details class='popover popover-left-start'>
           <summary>left start</summary>
-          <div class='popover-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class='popover-content'>content</div>
         </details>
       </div>
       <div class='left'>
         <details class='popover popover-left'>
           <summary>left</summary>
-          <div class='popover-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class='popover-content'>content</div>
         </details>
       </div>
       <div class='left-end'>
         <details class='popover popover-left-end'>
           <summary>left end</summary>
-          <div class='popover-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class='popover-content'>content</div>
         </details>
       </div>
 
       <div class='right-start'>
           <details class='popover popover-right-start'>
           <summary>right start</summary>
-          <div class='popover-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class='popover-content'>content</div>
         </details>
       </div>
       <div class='right'>
         <details class='popover popover-right'>
           <summary>right</summary>
-          <div class='popover-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class='popover-content'>content</div>
         </details>
       </div>
       <div class='right-end'>
         <details class='popover popover-right-end'>
           <summary>right end</summary>
-          <div class='popover-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class='popover-content'>content</div>
         </details>
       </div>
 
       <div class='bottom-start'>
           <details class='popover popover-bottom-start'>
           <summary>bottom start</summary>
-          <div class='popover-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class='popover-content'>content</div>
         </details>
       </div>
       <div class='bottom'>
         <details class='popover popover-bottom'>
           <summary>bottom</summary>
-          <div class='popover-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class='popover-content'>content</div>
         </details>
       </div>
       <div class='bottom-end'>
         <details class='popover popover-bottom-end'>
           <summary>bottom end</summary>
-          <div class='popover-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class='popover-content'>content</div>
         </details>
       </div>
     </div>
+    <script>
+
+      document.querySelectorAll('.demo .popover').forEach(popover => {
+        const html = html_beautify(popover.parentElement.innerHTML)
+        const content = popover.querySelector('.popover-content')
+        content.innerHTML = '<pre><code class="html"></code></pre>'
+        popover.querySelector('pre code').innerText = html
+      })
+
+      document.querySelectorAll('pre code').forEach(block => {
+        hljs.highlightBlock(block)
+      })
+
+    </script>
   </body>
 </html>
