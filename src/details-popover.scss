@@ -124,15 +124,20 @@ details.popover{
 
   &.popover-arrow{
 
+    .popover-content{
+      &:before, &:after{
+        content: '';
+        position: absolute;
+        border: 10px solid transparent;
+        z-index: 50;
+      }
+    }
+
     &.popover-top{
       .popover-content{
         &:before, &:after{
-          content: '';
-          position: absolute;
-          border: 10px solid transparent;
           left: 50%;
           transform: translateX(-50%);
-          z-index: 50;
         }
         &:after{
           border-top-color: $background-color;
@@ -141,6 +146,23 @@ details.popover{
         &:before{
           border-top-color: $border-color;
           top: 100%;
+        }
+      }
+    }
+
+    &.popover-bottom{
+      .popover-content{
+        &:before, &:after{
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        &:after{
+          border-bottom-color: $background-color;
+          bottom: calc(100% - 1px);
+        }
+        &:before{
+          border-bottom-color: $border-color;
+          bottom: 100%;
         }
       }
     }
