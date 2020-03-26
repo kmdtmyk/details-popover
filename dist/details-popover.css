@@ -101,14 +101,39 @@ details.popover.popover-arrow .popover-content:before, details.popover.popover-a
   z-index: 50;
 }
 
+details.popover.popover-arrow.popover-left .popover-content:before, details.popover.popover-arrow.popover-left .popover-content:after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+details.popover.popover-arrow.popover-left .popover-content:before {
+  border-left-color: #ccc;
+  left: 100%;
+}
+
+details.popover.popover-arrow.popover-left .popover-content:after {
+  border-left-color: #fff;
+  left: calc(100% - 1px);
+}
+
+details.popover.popover-arrow.popover-right .popover-content:before, details.popover.popover-arrow.popover-right .popover-content:after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+details.popover.popover-arrow.popover-right .popover-content:before {
+  border-right-color: #ccc;
+  right: 100%;
+}
+
+details.popover.popover-arrow.popover-right .popover-content:after {
+  border-right-color: #fff;
+  right: calc(100% - 1px);
+}
+
 details.popover.popover-arrow.popover-top .popover-content:before, details.popover.popover-arrow.popover-top .popover-content:after {
   left: 50%;
   transform: translateX(-50%);
-}
-
-details.popover.popover-arrow.popover-top .popover-content:after {
-  border-top-color: #fff;
-  top: calc(100% - 1px);
 }
 
 details.popover.popover-arrow.popover-top .popover-content:before {
@@ -116,17 +141,22 @@ details.popover.popover-arrow.popover-top .popover-content:before {
   top: 100%;
 }
 
+details.popover.popover-arrow.popover-top .popover-content:after {
+  border-top-color: #fff;
+  top: calc(100% - 1px);
+}
+
 details.popover.popover-arrow.popover-bottom .popover-content:before, details.popover.popover-arrow.popover-bottom .popover-content:after {
   left: 50%;
   transform: translateX(-50%);
 }
 
-details.popover.popover-arrow.popover-bottom .popover-content:after {
-  border-bottom-color: #fff;
-  bottom: calc(100% - 1px);
-}
-
 details.popover.popover-arrow.popover-bottom .popover-content:before {
   border-bottom-color: #ccc;
   bottom: 100%;
+}
+
+details.popover.popover-arrow.popover-bottom .popover-content:after {
+  border-bottom-color: #fff;
+  bottom: calc(100% - 1px);
 }
