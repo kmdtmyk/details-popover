@@ -94,24 +94,21 @@ details.popover.popover-bottom-end .popover-content {
   top: 100%;
 }
 
-details.popover.popover-arrow.popover-top .popover-content:before {
+details.popover.popover-arrow.popover-top .popover-content:before, details.popover.popover-arrow.popover-top .popover-content:after {
   content: '';
   position: absolute;
   border: 10px solid transparent;
-  border-top-color: #ccc;
-  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 50;
 }
 
 details.popover.popover-arrow.popover-top .popover-content:after {
-  content: '';
-  position: absolute;
-  border: 10px solid transparent;
   border-top-color: #fff;
   top: calc(100% - 1px);
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 50;
+}
+
+details.popover.popover-arrow.popover-top .popover-content:before {
+  border-top-color: #ccc;
+  top: 100%;
 }

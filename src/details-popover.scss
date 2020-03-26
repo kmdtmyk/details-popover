@@ -126,26 +126,21 @@ details.popover{
 
     &.popover-top{
       .popover-content{
-        &:before{
+        &:before, &:after{
           content: '';
           position: absolute;
           border: 10px solid transparent;
-          border-top-color: $border-color;
-          top: 100%;
           left: 50%;
           transform: translateX(-50%);
           z-index: 50;
         }
-
         &:after{
-          content: '';
-          position: absolute;
-          border: 10px solid transparent;
           border-top-color: $background-color;
           top: calc(100% - 1px);
-          left: 50%;
-          transform: translateX(-50%);
-          z-index: 50;
+        }
+        &:before{
+          border-top-color: $border-color;
+          top: 100%;
         }
       }
     }
